@@ -1,0 +1,3 @@
+This repository demonstrates a common off-by-one error in Java when iterating through arrays. The bug.java file contains code that attempts to access an array element beyond its bounds, while bugSolution.java provides a corrected version.
+
+The off-by-one error arises from using "i <= arr.length" in the loop condition.  Arrays in Java are zero-indexed, so the last valid index is arr.length - 1.  The provided solution corrects this by changing the loop condition to "i < arr.length".
